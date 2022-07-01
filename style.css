@@ -1,11 +1,13 @@
 body{
-    background:black;
+    background: rgb(24,100,59);
+background: radial-gradient(circle, rgba(24,100,59,1) 0%, rgba(0,0,0,1) 100%);
 	font-family: 'M PLUS Code Latin', sans-serif;
 	color:#22f14f;
 	font-size:20px;
 }
 p{
 	text-indent:5%;
+	z-index:3;
 }
 .flex{
 	display:flex;
@@ -55,7 +57,6 @@ p{
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }   
 }
-
 @keyframes floating1 {
     0% { transform: translate(0,  0px); }
 	25% { transform: translate(0,  5px); }
@@ -63,7 +64,6 @@ p{
 	75%  { transform: translate(0, 9px); }
     100%   { transform: translate(0, -0px); }   
 }
-
 @keyframes floating2 {
     0% { transform: translate(0,  0px); }
 	10%  { transform: translate(0, 6px); }
@@ -91,6 +91,7 @@ p{
 	border-style: none dashed solid dashed;
     border-width:10px;
 	color:white;
+	z-index:10;
 }
 
 /*Footer*/
@@ -99,6 +100,7 @@ footer {
   padding: 3px;
   background-color: #333;
   color: white;
+  z-index:2;
 }
 
 /*Nav Bar*/
@@ -107,7 +109,7 @@ footer {
   overflow: hidden;
   display: flex;
   justify-content: space-around;
-  z-index:10;
+  z-index:2;
 }
 .nav a {
   float:left;
@@ -130,10 +132,7 @@ html, body{
 }
 
 /*Link*/
-a:link {
-  color: #8875ff;
-  text-decoration: none;
-}
+
 a:visited {
   color: #b3d3ff;
   text-decoration: none;
@@ -276,28 +275,48 @@ a:hover {
 .crt::after {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   background: rgba(18, 16, 16, 0.1);
   opacity: 0;
-  z-index: 2;
+  z-index:2;
   animation: flicker 0.15s infinite;
 }
 .crt::before {
   content: " ";
-  display: block;
-  position: absolute;
+  display: flex;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  z-index:2;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 2;
-  background-size: 100% 5px, 100px 100%;
+  background-size: 100% 2px, 6px 100%;
 }
 .crt {
   animation: textShadow 1.6s infinite;
 } 
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #309c6e, 0 0 40px #309c6e, 0 0 50px #309c6e, 0 0 60px #309c6e, 0 0 70px #309c6e;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4fdb5f, 0 0 40px #4fdb5f, 0 0 50px #4fdb5f, 0 0 60px #4fdb5f, 0 0 70px #4fdb5f, 0 0 80px #4fdb5f;
+  }
+}
+
+a:link {
+  color: #8875ff;
+  text-decoration: none;
+  z-index:9999999999999;
+}
