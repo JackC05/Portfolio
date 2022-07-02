@@ -3,7 +3,7 @@ body{
 background: radial-gradient(circle, rgba(24,100,59,1) 0%, rgba(0,0,0,1) 100%);
 	font-family: 'M PLUS Code Latin', sans-serif;
 	color:#22f14f;
-	font-size:20px;
+	font-size:30px;
 }
 p{
 	text-indent:5%;
@@ -308,15 +308,16 @@ a:hover {
 }
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #309c6e, 0 0 40px #309c6e, 0 0 50px #309c6e, 0 0 60px #309c6e, 0 0 70px #309c6e;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #4fdb5f, 0 0 40px #4fdb5f, 0 0 50px #4fdb5f, 0 0 60px #4fdb5f, 0 0 70px #4fdb5f, 0 0 80px #4fdb5f;
+    text-shadow: 0 0 20px #fff, 0 0 30px #4fdb5f;
   }
 }
 
 a:link {
   color: #8875ff;
   text-decoration: none;
-  z-index:9999999999999;
+  z-index:10;
+  position:relative;
 }
