@@ -2,7 +2,7 @@ body{
     background: rgb(24,100,59);
 background: radial-gradient(circle, rgba(24,100,59,1) 0%, rgba(0,0,0,1) 100%);
 	font-family: 'M PLUS Code Latin', sans-serif;
-	color:#22f14f;
+	color:/*#22f14f;*/#91ffaa;
 	font-size:30px;
 }
 p{
@@ -92,6 +92,12 @@ p{
     border-width:10px;
 	color:white;
 	z-index:10;
+}
+
+#like{
+	border-style: none solid none none;
+    border-width:10px;
+	color:white;
 }
 
 /*Footer*/
