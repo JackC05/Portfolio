@@ -3,7 +3,7 @@ body{
 background: radial-gradient(circle, rgba(14,62,16,1) 0%, rgba(0,0,0,1) 100%);
 	font-family: 'M PLUS Code Latin', sans-serif;
 	color:/*#22f14f;*/#91ffaa;
-	font-size:30px;
+	font-size:28px;
 }
 p{
 	text-indent:5%;
@@ -52,6 +52,7 @@ p{
     margin-top: 5px;
 }
 
+/*Float the main header*/
 @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
@@ -72,7 +73,7 @@ p{
     100%   { transform: translate(0, -0px); }   
 }
 
-/*Classes*/
+/*Headers*/
 #left{
     border-style: none none none solid;
     border-width:10px;
@@ -93,7 +94,6 @@ p{
 	color:white;
 	z-index:10;
 }
-
 #like{
 	border-style: none solid none none;
     border-width:10px;
@@ -148,6 +148,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/*Crt Effect*/
 @keyframes flicker {
   0% {
     opacity: 0.27861;
@@ -307,6 +308,7 @@ a:hover {
   animation: textShadow 1.6s infinite;
 } 
 
+/*Glow on Text*/
 .glow {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;

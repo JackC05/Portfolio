@@ -16,11 +16,44 @@
   <a href="portfolio.html#program"><b>Projects</b></a>
   <a href="portfolio.html#contact"><b>Contact Me</b></a>
 </div>
-
 	
+	<img style="z-index:20; position:relative; width:2%; float:right; top: 8px; right: 16px;" onclick="removeEffect()" src="sett.png">
+	
+	<script>
+		let n = 0
+function removeEffect(){
+		
+	if(n === 1){
+	location.reload();
+	n = 0
+	}
+	
+	if(n === 0){
+	var crt = document.querySelector(".crt");
+	crt.classList.remove("crt");
+	n = 1
+	}
+}
+	
+	</script>
+
 	 <h1>Granola</h1>
+	 <div class="flex">
 	 <div class="floating">
 	 <img src="granola_spin.gif">
+	 <img src="original.png">
 	 </div>
+	</div>
+		<h1>Jest</h1>
+	 <div class="floating">
+	 <img src="sheet.png">
+	 </div>
+	 <h1>Lord Raptor</h1>
+	 <div class="floating">
+	 <img src="lordraptor.png">
+	 </div>
+	 
+	 <h2>For More!<h2>
+	 <p>Newgrounds:<a target="_blank" href="https://jestquest.newgrounds.com/">JestQuest</a></p>
 	</body>
 </html>

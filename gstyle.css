@@ -7,11 +7,14 @@ background: radial-gradient(circle, rgba(24,100,59,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 img{
-	width:50%;
+	width:30%;
 	border:10px double #22f14f;
 	padding:10px;
 }
-
+.flex{
+	display:flex;
+	justify-content:flex-start;
+}
 .floating { 
     animation-name: floating;
     animation-duration: 3s;
@@ -209,3 +212,18 @@ img{
 .crt {
   animation: textShadow 1.6s infinite;
 } 
+
+a:link {
+  color: #8875ff;
+  text-decoration: none;
+  z-index:10;
+  position:relative;
+}
+a:visited {
+  color: #b3d3ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #36cfea;
+  text-decoration: underline;
+}
