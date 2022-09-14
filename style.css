@@ -322,6 +322,10 @@ a:hover {
   }
 }
 
+iframe{
+ border:0;
+}
+
 a:link {
   color: #8875ff;
   text-decoration: none;
